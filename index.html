@@ -46,10 +46,6 @@
     </a>
     <div class="hero-stats">
       <div>
-        <div class="hero-stat-val">$3.75M</div>
-        <div class="hero-stat-label">Fundraising Target</div>
-      </div>
-      <div>
         <div class="hero-stat-val">5+</div>
         <div class="hero-stat-label">Patents Filed</div>
       </div>
@@ -222,107 +218,6 @@
   </div>
 </section>
 
-<!-- DEMO / SHOPPING CART -->
-<section id="demo">
-  <div class="container">
-    <p class="section-label reveal">Live Demo</p>
-    <h2 class="demo-title reveal">AI Shopping Experience</h2>
-    <p class="demo-subtitle reveal">See how AIvislab's AI avatar guides customers through seamless checkout &#8212; reducing labor costs while elevating the service experience.</p>
-    <div class="demo-layout reveal">
-
-      <!-- Product Catalog -->
-      <div class="demo-catalog">
-        <div class="demo-catalog-header">
-          <span class="demo-catalog-title">Product Catalog</span>
-          <span class="demo-ai-badge">
-            <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3" fill="#9F7AEA"/></svg>
-            AI&#8209;Assisted
-          </span>
-        </div>
-        <div class="demo-products">
-          <div class="demo-product" data-id="starter" data-name="AIvisLab Box Starter" data-price="1000">
-            <div class="demo-product-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#9F7AEA" stroke-width="1.4"/><path d="M7 10h6M10 7v6" stroke="#9F7AEA" stroke-width="1.3" stroke-linecap="round"/></svg></div>
-            <div class="demo-product-info">
-              <span class="demo-product-name">AIvisLab Box Starter</span>
-              <span class="demo-product-cat">Entry Level &middot; 1 Unit</span>
-            </div>
-            <div class="demo-product-right">
-              <span class="demo-product-price">$1,000</span>
-              <button class="demo-add-btn" onclick="demoAddToCart(this)">+</button>
-            </div>
-          </div>
-          <div class="demo-product" data-id="advance" data-name="AIvisLab Box Advance" data-price="5000">
-            <div class="demo-product-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#9F7AEA" stroke-width="1.4"/><path d="M6 10h8" stroke="#9F7AEA" stroke-width="1.3" stroke-linecap="round"/><path d="M10 7v6" stroke="#F4C842" stroke-width="1.3" stroke-linecap="round"/><circle cx="10" cy="10" r="1.5" fill="#9F7AEA"/></svg></div>
-            <div class="demo-product-info">
-              <span class="demo-product-name">AIvisLab Box Advance</span>
-              <span class="demo-product-cat">Professional &middot; Multi-function</span>
-            </div>
-            <div class="demo-product-right">
-              <span class="demo-product-price">$5,000</span>
-              <button class="demo-add-btn" onclick="demoAddToCart(this)">+</button>
-            </div>
-          </div>
-          <div class="demo-product" data-id="expert" data-name="AIvisLab Box Expert" data-price="10000">
-            <div class="demo-product-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="#F4C842" stroke-width="1.4"/><path d="M6 10h8" stroke="#F4C842" stroke-width="1.3" stroke-linecap="round"/><circle cx="10" cy="10" r="2" stroke="#F4C842" stroke-width="1.2"/><path d="M10 7v1M10 12v1M7 10H6M14 10h-1" stroke="#F4C842" stroke-width="1.1" stroke-linecap="round"/></svg></div>
-            <div class="demo-product-info">
-              <span class="demo-product-name">AIvisLab Box Expert</span>
-              <span class="demo-product-cat">Enterprise &middot; Full Platform</span>
-            </div>
-            <div class="demo-product-right">
-              <span class="demo-product-price">$10,000</span>
-              <button class="demo-add-btn" onclick="demoAddToCart(this)">+</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sidebar: AI Avatar + Cart -->
-      <div class="demo-sidebar">
-
-        <!-- AI Avatar Panel -->
-        <div class="demo-avatar-panel">
-          <div class="demo-avatar-visual">
-            <div class="demo-avatar-ring"></div>
-            <div class="demo-avatar-core">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="8" r="3.5" stroke="white" stroke-width="1.5"/>
-                <path d="M5 21c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                <circle cx="12" cy="8" r="1.2" fill="white"/>
-              </svg>
-            </div>
-          </div>
-          <div class="demo-avatar-speech">
-            <div class="demo-avatar-name">AIVA &middot; AI Assistant</div>
-            <p id="demo-avatar-msg" class="demo-avatar-text">Hi! I'm AIVA, your AI shopping assistant. Add items to get started!</p>
-          </div>
-        </div>
-
-        <!-- Cart Panel -->
-        <div class="demo-cart-panel">
-          <div class="demo-cart-header">
-            <span>Shopping Cart</span>
-            <span id="demo-cart-badge" class="demo-cart-badge">0</span>
-          </div>
-          <div id="demo-cart-list" class="demo-cart-list">
-            <div class="demo-cart-empty">Cart is empty</div>
-          </div>
-          <div class="demo-cart-footer">
-            <div class="demo-cart-total-row">
-              <span>Total</span>
-              <span id="demo-cart-total" class="demo-cart-total-price">$0.00</span>
-            </div>
-            <button id="demo-checkout-btn" class="demo-checkout-btn" onclick="demoCheckout()" disabled>
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="4" width="10" height="8" rx="1.5" stroke="white" stroke-width="1.2"/><path d="M5 4V3a2 2 0 014 0v1" stroke="white" stroke-width="1.2" stroke-linecap="round"/><path d="M5 8l1.5 1.5L9 6.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              AI Checkout
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- TECHNOLOGY -->
 <section id="technology">
   <div class="container">
@@ -375,6 +270,67 @@
     </div>
     <div class="tech-tagline reveal">
       <p>One Engine. <span>All Modalities.</span> Intelligent. Adaptive. Autonomous.</p>
+    </div>
+
+    <!-- ORDER EXECUTION FLOW -->
+    <div class="tech-flow-section reveal">
+      <p class="tech-flow-heading">Real-World Order Execution System</p>
+      <p class="tech-flow-sub">From Customer Order to POS Order Tag &#8212; Real-Time End-to-End Flow</p>
+      <div class="tech-flow-steps">
+        <div class="tech-flow-step">
+          <div class="tech-flow-num">1</div>
+          <h4>Customer Tries to Order</h4>
+          <p>Customer speaks their order to AivisLab Avatar in natural language</p>
+          <div class="tech-flow-step-tags">
+            <span class="tech-flow-tag">Voice Input</span>
+            <span class="tech-flow-tag">Natural Language</span>
+          </div>
+        </div>
+        <div class="tech-flow-arr">&#8594;</div>
+        <div class="tech-flow-step">
+          <div class="tech-flow-num">2</div>
+          <h4>AI Avatar Confirms Order</h4>
+          <p>Avatar understands, interacts and confirms the full order via LLM &amp; speech</p>
+          <div class="tech-flow-step-tags">
+            <span class="tech-flow-tag">Speech Recognition</span>
+            <span class="tech-flow-tag">LLM Reasoning</span>
+            <span class="tech-flow-tag">Voice &amp; Gesture</span>
+          </div>
+        </div>
+        <div class="tech-flow-arr">&#8594;</div>
+        <div class="tech-flow-step">
+          <div class="tech-flow-num">3</div>
+          <h4>JetBox Connects to POS</h4>
+          <p>AivisLab JetBox securely transmits order data to the retailer's POS system</p>
+          <div class="tech-flow-step-tags">
+            <span class="tech-flow-tag">Encrypted Transmission</span>
+            <span class="tech-flow-tag">POS Protocol</span>
+            <span class="tech-flow-tag">Real-time Execution</span>
+          </div>
+        </div>
+        <div class="tech-flow-arr">&#8594;</div>
+        <div class="tech-flow-step">
+          <div class="tech-flow-num">4</div>
+          <h4>POS Provides Order Tag</h4>
+          <p>POS processes the order and generates a kitchen order tag for preparation</p>
+          <div class="tech-flow-step-tags">
+            <span class="tech-flow-tag">Order Processed</span>
+            <span class="tech-flow-tag">Tag Generated</span>
+            <span class="tech-flow-tag">Sent to Kitchen</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-flow-summary">
+        <span class="tech-flow-chip">Customer Places Order</span>
+        <span class="tech-flow-arrow-sm">&#8594;</span>
+        <span class="tech-flow-chip">Avatar Understands &amp; Confirms</span>
+        <span class="tech-flow-arrow-sm">&#8594;</span>
+        <span class="tech-flow-chip">JetBox Sends Order to POS</span>
+        <span class="tech-flow-arrow-sm">&#8594;</span>
+        <span class="tech-flow-chip">POS Generates Order Tag</span>
+        <span class="tech-flow-arrow-sm">&#8594;</span>
+        <span class="tech-flow-chip">Kitchen Receives &amp; Prepares</span>
+      </div>
     </div>
   </div>
 </section>
@@ -544,6 +500,44 @@
         <span class="chain-tag">+ Asian Chains (Japan / Taiwan)</span>
       </div>
     </div>
+
+    <!-- ASIA MARKET BRANDS -->
+    <div class="asia-market reveal">
+      <p class="asia-market-title">Asia (Japan &amp; Taiwan) Fast Food Brands</p>
+      <div class="asia-tabs">
+        <span class="asia-tab active">Japan</span>
+        <span class="asia-tab">Taiwan</span>
+        <span class="asia-tab">China</span>
+        <span class="asia-tab">Europe</span>
+        <span class="asia-tab">South AM</span>
+      </div>
+      <div class="asia-brands-grid">
+        <div class="asia-brand-card"><span class="asia-brand-name">Yayoi</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">CoCo壱番屋</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Torikizoku</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">SEVEN&amp;i</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Sushiro</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Kura Sushi</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">王将 (Osho)</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Sukiya</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Japan 7-Eleven</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">HottoMotto</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">FamilyMart</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Kotsuya Matsuya</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Lawson</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Bikkuri Donkey</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Yoshinoya</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">MOS Burger</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Saizeriya</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Denny's Japan</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Lotteria</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Mister Donut</span><span class="asia-brand-country">Japan</span></div>
+        <div class="asia-brand-card"><span class="asia-brand-name">Shakey's Pizza</span><span class="asia-brand-country">Taiwan</span></div>
+      </div>
+      <div class="asia-stat-box">
+        <p>Asia's fast food market was valued at <strong>~$270B in 2023</strong> and is projected to reach <strong>~$400B+</strong> by 2030, growing at a CAGR of <strong>~6%</strong>. Strong presence of trusted local brands with deep consumer loyalty and high frequency &#8212; rising demand for AI-powered convenience, loyalty programs, and digital-first experiences.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -634,54 +628,42 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- BUSINESS CASE -->
-<section id="case-study">
-  <div class="container">
-    <p class="section-label reveal">ROI Analysis</p>
-    <h2 class="case-title reveal">Business Case</h2>
-    <p class="case-subtitle reveal">Profitable AI Checkout Assistant Model &#8212; Per-Interaction &amp; Per-Store Economics</p>
-    <div class="case-layout">
-      <div class="case-box reveal reveal-delay-1">
-        <h3>Per-Interaction Economics</h3>
-        <div class="case-rows">
-          <div class="case-row"><span>Customer pays (per interaction)</span><strong>$0.20</strong></div>
-          <div class="case-row"><span>= $20 per 1,000 interactions</span><strong></strong></div>
-          <div class="case-row"><span>AI internal cost breakdown:</span><strong></strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>LLM (GPT-4o mini, 2,000 tokens)</span><strong>$0.0015</strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>Speech-to-Text (STT)</span><strong>$0.0010</strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>Text-to-Speech (TTS)</span><strong>$0.0010</strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>Avatar Processing</span><strong>$0.0015</strong></div>
-          <div class="case-row" style="border-top:1px solid rgba(107,70,193,0.15);padding-top:0.75rem;margin-top:0.25rem"><span>Total internal cost per interaction</span><strong>$0.005</strong></div>
-          <div class="case-row"><span>Gross profit per interaction</span><strong class="case-highlight">$0.195</strong></div>
-          <div class="case-row"><span>Gross margin per interaction</span><strong class="case-highlight" style="font-size:1.2rem">97%</strong></div>
+    <!-- ENTERPRISE PLATFORM -->
+    <div class="bm-enterprise reveal">
+      <div class="bm-ent-header">
+        <div>
+          <div class="bm-ent-title">Enterprise Platform</div>
+          <div class="bm-ent-subtitle">For national chains and large enterprises — custom solutions for complex, high-volume operations</div>
         </div>
+        <span class="bm-ent-badge">Custom Quote</span>
       </div>
-      <div class="case-box reveal reveal-delay-2">
-        <h3>Single Store Monthly (Example)</h3>
-        <div class="case-rows">
-          <div class="case-row"><span style="font-weight:600;color:var(--mid)">Revenue</span><strong></strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>SaaS Platform Fee</span><strong>$2,000</strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>AI Usage Fee</span><strong>$500</strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>Maintenance &amp; Support</span><strong>$300</strong></div>
-          <div class="case-row" style="border-top:1px solid rgba(107,70,193,0.15);padding-top:0.75rem;margin-top:0.25rem"><span>Total Monthly Revenue</span><strong class="case-highlight">$2,800</strong></div>
-          <div class="case-row"><span style="font-weight:600;color:var(--mid)">Cost</span><strong></strong></div>
-          <div class="case-row" style="padding-left:1rem"><span>LLM + Voice AI + Cloud + Support</span><strong>$340</strong></div>
-          <div class="case-row" style="border-top:1px solid rgba(107,70,193,0.15);padding-top:0.75rem;margin-top:0.25rem"><span>Gross Profit per Store/Month</span><strong class="case-highlight">$2,460</strong></div>
-          <div class="case-row"><span>Gross Margin per Store</span><strong class="case-highlight" style="font-size:1.2rem">88%</strong></div>
-        </div>
-      </div>
-      <div class="case-summary">
-        <div class="case-summary-text">
-          At scale across 100 stores, AivisLab generates
-          <strong>$390,000 gross profit per month</strong>
-        </div>
-        <div style="text-align:right">
-          <div style="font-family:var(--mono);font-size:0.7rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.4rem">2030 ARR Target</div>
-          <div style="font-family:var(--display);font-size:2.5rem;font-weight:800;color:var(--gold)">$100M+</div>
-          <div style="font-family:var(--mono);font-size:0.7rem;color:rgba(255,255,255,0.5)">5,000 stores × $2,000/mo × 12</div>
+      <div class="bm-ent-body">
+        <div class="bm-ent-features">
+          <div class="bm-ent-feature">
+            <h5>Platform License</h5>
+            <p>Flexible licensing based on your deployment needs and scale</p>
+          </div>
+          <div class="bm-ent-feature">
+            <h5>AI Usage</h5>
+            <p>Token or interaction-based pricing designed for high-volume enterprise scale</p>
+          </div>
+          <div class="bm-ent-feature">
+            <h5>Maintenance &amp; Support</h5>
+            <p>Proactive maintenance and 24/7 enterprise support with guaranteed response times</p>
+          </div>
+          <div class="bm-ent-feature">
+            <h5>Custom Integration</h5>
+            <p>Seamless integration with your existing systems, workflows, and APIs</p>
+          </div>
+          <div class="bm-ent-feature">
+            <h5>Dedicated SLA</h5>
+            <p>Enterprise-grade SLA with guaranteed uptime and performance commitments</p>
+          </div>
+          <div class="bm-ent-feature">
+            <h5>White-Label Deployment</h5>
+            <p>White-label option for your brand experience across all customer touchpoints</p>
+          </div>
         </div>
       </div>
     </div>
@@ -745,58 +727,6 @@
   </div>
 </section>
 
-<!-- TRACTION -->
-<section id="traction">
-  <div class="container">
-    <p class="section-label reveal">Progress</p>
-    <h2 class="traction-title reveal">Traction</h2>
-    <div class="traction-milestones">
-      <div class="traction-item reveal reveal-delay-1">
-        <div class="traction-check">&#10003;</div>
-        <div>
-          <h4>Functional Prototype</h4>
-          <p>Fully functional prototype built and tested, demonstrating core AI autonomous capabilities end-to-end.</p>
-        </div>
-      </div>
-      <div class="traction-item reveal reveal-delay-2">
-        <div class="traction-check">&#10003;</div>
-        <div>
-          <h4>POS Integration Completed</h4>
-          <p>Seamless integration with leading POS systems for real-time order processing, payment, and inventory sync.</p>
-        </div>
-      </div>
-      <div class="traction-item reveal reveal-delay-3">
-        <div class="traction-check">&#10003;</div>
-        <div>
-          <h4>Patent Portfolio Filed</h4>
-          <p>5 U.S. patent applications filed (granted/pending) plus 1 global PCT application protecting all core AI innovations.</p>
-        </div>
-      </div>
-      <div class="traction-item reveal reveal-delay-4">
-        <div class="traction-check">&#10003;</div>
-        <div>
-          <h4>Pilot Discussions with 3 Retail Chains</h4>
-          <p>Active pilot discussions with 3 national retail chains targeting immediate deployment and commercial validation.</p>
-        </div>
-      </div>
-      <div class="traction-item reveal reveal-delay-1">
-        <div class="traction-check">&#10003;</div>
-        <div>
-          <h4>Trade Show Pipeline: 246 Leads</h4>
-          <p>Strong pipeline of 246 qualified leads generated from recent U.S. and international trade shows.</p>
-        </div>
-      </div>
-    </div>
-    <div class="traction-kpis reveal">
-      <div class="kpi"><div class="kpi-val">1</div><div class="kpi-label">Prototype</div></div>
-      <div class="kpi"><div class="kpi-val">3</div><div class="kpi-label">Pilot Chains</div></div>
-      <div class="kpi"><div class="kpi-val">5</div><div class="kpi-label">Patents Filed</div></div>
-      <div class="kpi"><div class="kpi-val">246</div><div class="kpi-label">Trade Leads</div></div>
-      <div class="kpi"><div class="kpi-val kpi-text">Live</div><div class="kpi-label">POS Integrated</div></div>
-    </div>
-  </div>
-</section>
-
 <!-- FINANCIALS -->
 <section id="financials">
   <div class="container">
@@ -838,6 +768,59 @@
         <span class="fin-focus-tag">IPO Ready</span>
         <p>IPO &amp; global leadership, sustained long-term growth</p>
         <div class="fin-ipo-badge">&#9733; IPO Target</div>
+      </div>
+    </div>
+
+    <!-- ARR GROWTH TABLE -->
+    <div class="arr-section reveal">
+      <p class="arr-label">ARR Growth Projection</p>
+      <h3 class="arr-heading">Scalable Unit Economics</h3>
+      <p class="arr-sub">Based on $2,800+ per location per month &#8212; 1,000 orders/store/day · 500 AI tokens/order · Hybrid AI routing</p>
+      <div class="arr-table-wrap">
+        <table class="arr-table">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>2027</th>
+              <th>2028</th>
+              <th>2029</th>
+              <th>2030</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Store Count (Locations)</td>
+              <td>50</td>
+              <td>500</td>
+              <td>2,000</td>
+              <td>5,000</td>
+            </tr>
+            <tr>
+              <td>ARR (USD)</td>
+              <td>$1.68M</td>
+              <td>$16.80M</td>
+              <td>$67.20M</td>
+              <td class="arr-highlight">$168.00M</td>
+            </tr>
+            <tr>
+              <td>Gross Margin (88%)</td>
+              <td>$1.48M</td>
+              <td>$14.78M</td>
+              <td>$59.14M</td>
+              <td class="arr-highlight">$147.84M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="arr-target-box">
+        <div>
+          <div class="arr-target-text">Scale to</div>
+          <div class="arr-target-num">$168M+ ARR</div>
+          <div class="arr-target-sub">by 2030 · 5,000 locations globally</div>
+        </div>
+        <div style="font-size:0.82rem;color:rgba(255,255,255,0.5);max-width:380px;line-height:1.7">
+          Predictable &amp; scalable recurring revenue with 88% gross margin &#8212; profitable at every location as we grow from 50 stores in 2027 to 5,000 stores by 2030.
+        </div>
       </div>
     </div>
   </div>
@@ -899,97 +882,6 @@
   </div>
 </section>
 
-<!-- COMPETITIVE LANDSCAPE -->
-<section id="competitive">
-  <div class="container">
-    <p class="section-label reveal">Market Position</p>
-    <h2 class="comp-title reveal">Competitive Landscape</h2>
-    <p class="comp-sub reveal">AivisLab is the Only End-to-End AI Platform for Physical Commerce</p>
-    <div class="comp-table-wrap reveal">
-      <table class="comp-table">
-        <thead>
-          <tr>
-            <th>Capability</th>
-            <th>Chatbot<br><span>Voice AI</span></th>
-            <th>Vendor Kiosk</th>
-            <th class="comp-us">AivisLab</th>
-            <th>Patent<br><span>Status</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Voice AI</td>
-            <td class="comp-yes">&#10003;</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-us comp-yes">&#10003;</td>
-            <td class="comp-patent">Filed</td>
-          </tr>
-          <tr>
-            <td>AI Avatar</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-us comp-yes">&#10003;</td>
-            <td class="comp-patent">Filed</td>
-          </tr>
-          <tr>
-            <td>POS Control</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-limited">Limited</td>
-            <td class="comp-us comp-yes">&#10003;</td>
-            <td class="comp-patent">Filed</td>
-          </tr>
-          <tr>
-            <td>Payment Execution</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-yes">&#10003;</td>
-            <td class="comp-us comp-yes">&#10003;</td>
-            <td class="comp-patent">Filed</td>
-          </tr>
-          <tr>
-            <td>Queue Management</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-us comp-yes">&#10003;</td>
-            <td class="comp-patent">Filed</td>
-          </tr>
-          <tr>
-            <td>Human Handoff</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-no">&#10007;</td>
-            <td class="comp-us comp-yes">&#10003;</td>
-            <td class="comp-patent">Filed</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="comp-competitors reveal">
-      <div class="comp-competitor">
-        <div class="comp-comp-name">SoundHound AI</div>
-        <p>Strong Voice AI · No Avatar · Limited Payment · No Hardware · Drive-thru focused</p>
-      </div>
-      <div class="comp-competitor">
-        <div class="comp-comp-name">Bite</div>
-        <p>Voice ordering &amp; payments · No Avatar · No Queue Management · Limited POS control</p>
-      </div>
-      <div class="comp-competitor">
-        <div class="comp-comp-name">VOICEplug</div>
-        <p>Voice AI for phone ordering · No Avatar · Limited Payment · No Hardware · Not in-store</p>
-      </div>
-      <div class="comp-competitor">
-        <div class="comp-comp-name">Livex AI</div>
-        <p>Some AI and automation · Limited POS &amp; Payment · No Avatar · Not purpose-built for retail</p>
-      </div>
-      <div class="comp-competitor">
-        <div class="comp-comp-name">Graphen Ava</div>
-        <p>Digital avatars &amp; AI interaction · Limited POS and Payment · No full-stack retail platform</p>
-      </div>
-    </div>
-    <div class="comp-footer reveal">
-      No competitor delivers what AivisLab proposes &#8212; <span>AI Voice + Avatar + POS + Payment + Queue + Human Handoff + Edge Hardware</span> in one unified platform.
-    </div>
-  </div>
-</section>
-
 <!-- TEAM -->
 <section id="team">
   <div class="container">
@@ -1021,95 +913,6 @@
   </div>
 </section>
 
-<!-- FUNDRAISING -->
-<section id="fundraising">
-  <div class="container">
-    <p class="section-label reveal">Investment Opportunity</p>
-    <h2 class="fund-title reveal">Fund raising</h2>
-    <div class="fund-amount reveal">USD $3.75M</div>
-    <div class="fund-layout">
-      <div>
-        <div class="fund-rounds reveal">
-          <div class="fund-round angel">
-            <div>
-              <div class="fund-round-label">Angel Round ? 3</div>
-              <h4>Angel Investors (SAFE)</h4>
-            </div>
-            <div class="fund-round-meta">
-              <div class="fund-meta-item"><span>Per Angel</span><strong>$250K</strong></div>
-              <div class="fund-meta-item"><span>Val. Cap</span><strong>$15M</strong></div>
-              <div class="fund-meta-item"><span>Discount</span><strong>20%</strong></div>
-            </div>
-          </div>
-          <div class="fund-round seed">
-            <div>
-              <div class="fund-round-label">Seed VC Round</div>
-              <h4>Seed Venture Capital</h4>
-            </div>
-            <div class="fund-round-meta">
-              <div class="fund-meta-item"><span>Investment</span><strong>$1.0M</strong></div>
-              <div class="fund-meta-item"><span>Equity</span><strong>20%</strong></div>
-            </div>
-          </div>
-          <div class="fund-round series">
-            <div>
-              <div class="fund-round-label">Series A</div>
-              <h4>Series A Venture Capital</h4>
-            </div>
-            <div class="fund-round-meta">
-              <div class="fund-meta-item"><span>Investment</span><strong>$2.0M</strong></div>
-              <div class="fund-meta-item"><span>Equity</span><strong>10%</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="fund-total reveal">
-          <div>
-            <p>Total Raise Target</p>
-            <div style="font-family:var(--mono);font-size:0.7rem;color:rgba(255,255,255,0.4);margin-top:0.25rem">Strategic capital to accelerate product innovation &amp; market expansion</div>
-          </div>
-          <strong>$3.75M</strong>
-        </div>
-        <div style="margin-top:1.5rem;background:#F7F5FF;border-radius:10px;padding:1.5rem" class="reveal">
-          <div style="font-family:var(--mono);font-size:0.7rem;color:var(--mid);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.75rem">Use of Funds</div>
-          <div>
-            <span class="fund-use-tag" style="background:var(--pale);color:var(--deep)">Product Scaling</span>
-            <span class="fund-use-tag" style="background:var(--pale);color:var(--deep)">AI Infrastructure</span>
-            <span class="fund-use-tag" style="background:var(--pale);color:var(--deep)">Hiring</span>
-            <span class="fund-use-tag" style="background:var(--pale);color:var(--deep)">Patent Expansion</span>
-            <span class="fund-use-tag" style="background:var(--pale);color:var(--deep)">Pilot Deployment</span>
-          </div>
-        </div>
-      </div>
-      <div class="fund-contact reveal reveal-delay-2">
-        <h3>Get In Touch</h3>
-        <div class="contact-item">
-          <span class="contact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1C4.8 1 3 2.8 3 5c0 3.3 4 8 4 8s4-4.7 4-8c0-2.2-1.8-4-4-4z" stroke="#9F7AEA" stroke-width="1.2"/><circle cx="7" cy="5" r="1.5" stroke="#9F7AEA" stroke-width="1.2"/></svg></span>
-          15615 Alton Parkway, Suite 450<br>Irvine, CA 92618
-        </div>
-        <div class="contact-item">
-          <span class="<span class="contact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1" y="3" width="12" height="8" rx="1.5" stroke="#9F7AEA" stroke-width="1.2"/><path d="M1 4l6 4 6-4" stroke="#9F7AEA" stroke-width="1.2" stroke-linecap="round"/></svg></span>
-          info@AIvislab.com
-        </div>
-        <div class="contact-item">
-          <span class="<span class="contact-icon"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 2h3l1.5 3-1.5 1c.8 1.6 2 2.8 3.5 3.5l1-1.5 3 1.5v3c0 .6-.4 1-1 1C5.6 13 1 8.4 1 3c0-.6.4-1 1-1z" stroke="#9F7AEA" stroke-width="1.2"/></svg></span>
-          567-760-9529
-        </div>
-        <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(107,70,193,0.2)">
-          <div style="font-family:var(--mono);font-size:0.7rem;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem">Investment Summary</div>
-          <div style="font-size:0.82rem;color:rgba(255,255,255,0.5);line-height:1.8">
-            &#10003; Working prototype built &amp; tested<br>
-            &#10003; Pilot-ready deployment<br>
-            &#10003; 5+ patent applications filed<br>
-            &#10003; Global PCT protection<br>
-            &#10003; Multi-region market entry<br>
-            &#10003; $100M+ revenue path to IPO
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <footer>
   <p>&copy; 2026 <span>AIvislab</span> &#8212; Talking to the Future &middot; info@AIvislab.com &middot; 15615 Alton Pkwy Suite 450, Irvine CA 92618</p>
 </footer>
@@ -1134,124 +937,6 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// Counter animation
-function animateCounter(el, target, suffix = '') {
-  const duration = 1800;
-  const start = performance.now();
-  const update = (now) => {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    el.textContent = Math.round(eased * target).toLocaleString() + suffix;
-    if (progress < 1) requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-}
-
-const kpiObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      const vals = e.target.querySelectorAll('.kpi-val:not(.kpi-text)');
-      const targets = [1, 3, 5, 246];
-      const suffixes = ['', '', '+', ''];
-      vals.forEach((v, i) => { if (targets[i] !== undefined) animateCounter(v, targets[i], suffixes[i]); });
-      kpiObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.5 });
-const kpiSection = document.querySelector('.traction-kpis');
-if (kpiSection) kpiObserver.observe(kpiSection);
-
-// Demo shopping cart
-const _demoCart = {};
-const _demoMsgs = [
-  "Hi! I'm AIVA, your AI shopping assistant. Add items to get started!",
-  "Great choice! I can suggest similar items based on your preferences.",
-  "Nice picks! Your cart is building up nicely.",
-  "Ready to checkout? I'll process your payment in seconds.",
-  "Your cart looks great! Tap AI Checkout for a seamless experience."
-];
-
-function demoAddToCart(btn) {
-  const p = btn.closest('.demo-product');
-  const id = p.dataset.id;
-  const name = p.dataset.name;
-  const price = parseFloat(p.dataset.price);
-  const iconHTML = p.querySelector('.demo-product-icon').innerHTML;
-
-  btn.classList.add('added');
-  btn.innerHTML = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-  setTimeout(() => { btn.classList.remove('added'); btn.textContent = '+'; }, 600);
-
-  if (_demoCart[id]) {
-    _demoCart[id].qty++;
-  } else {
-    _demoCart[id] = { id, name, price, iconHTML, qty: 1 };
-  }
-  _demoRenderCart();
-  _demoUpdateAvatar();
-}
-
-function demoRemoveFromCart(id) {
-  delete _demoCart[id];
-  _demoRenderCart();
-  _demoUpdateAvatar();
-}
-
-function _demoRenderCart() {
-  const list = document.getElementById('demo-cart-list');
-  const badge = document.getElementById('demo-cart-badge');
-  const total = document.getElementById('demo-cart-total');
-  const btn = document.getElementById('demo-checkout-btn');
-  const items = Object.values(_demoCart);
-  const count = items.reduce((s, i) => s + i.qty, 0);
-  const sum = items.reduce((s, i) => s + i.qty * i.price, 0);
-
-  badge.textContent = count;
-  badge.classList.add('bump');
-  setTimeout(() => badge.classList.remove('bump'), 300);
-  total.textContent = '$' + sum.toLocaleString();
-  btn.disabled = count === 0;
-
-  if (count === 0) {
-    list.innerHTML = '<div class="demo-cart-empty">Cart is empty</div>';
-    return;
-  }
-  list.innerHTML = items.map(item => `
-    <div class="demo-cart-item">
-      <div class="demo-cart-item-icon">${item.iconHTML}</div>
-      <span class="demo-cart-item-name">${item.name}</span>
-      <span class="demo-cart-item-qty">x${item.qty}</span>
-      <span class="demo-cart-item-price">$${(item.qty * item.price).toLocaleString()}</span>
-      <button class="demo-cart-item-remove" onclick="demoRemoveFromCart('${item.id}')">x</button>
-    </div>
-  `).join('');
-}
-
-function _demoUpdateAvatar() {
-  const count = Object.values(_demoCart).reduce((s, i) => s + i.qty, 0);
-  const msg = document.getElementById('demo-avatar-msg');
-  const idx = Math.min(count, _demoMsgs.length - 1);
-  msg.style.opacity = '0';
-  setTimeout(() => { msg.textContent = _demoMsgs[idx]; msg.style.opacity = '1'; }, 220);
-}
-
-function demoCheckout() {
-  const btn = document.getElementById('demo-checkout-btn');
-  btn.classList.add('success');
-  btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7l4 4 6-6" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> Payment Processed';
-  const msg = document.getElementById('demo-avatar-msg');
-  msg.style.opacity = '0';
-  setTimeout(() => { msg.textContent = 'Payment processed! Thank you for shopping with AI assistance. Have a great day!'; msg.style.opacity = '1'; }, 280);
-  setTimeout(() => {
-    Object.keys(_demoCart).forEach(k => delete _demoCart[k]);
-    _demoRenderCart();
-    btn.classList.remove('success');
-    btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="2" y="4" width="10" height="8" rx="1.5" stroke="white" stroke-width="1.2"/><path d="M5 4V3a2 2 0 014 0v1" stroke="white" stroke-width="1.2" stroke-linecap="round"/><path d="M5 8l1.5 1.5L9 6.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg> AI Checkout';
-    btn.disabled = true;
-    _demoUpdateAvatar();
-  }, 3000);
-}
 </script>
 </body>
 </html>
