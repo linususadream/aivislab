@@ -23,12 +23,40 @@
   <ul class="nav-links">
     <li><a href="#problem">Problem</a></li>
     <li><a href="#solution">Solution</a></li>
+    <li><a href="#products">Products</a></li>
     <li><a href="#technology">Technology</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#patents">Patents</a></li>
     <li><a href="#market">Market</a></li>
+    <li><a href="#business-model">Pricing</a></li>
+    <li><a href="#go-to-market">GTM</a></li>
     <li><a href="#financials">Financials</a></li>
+    <li><a href="#why-win">Why Win</a></li>
+    <li><a href="#vision">Vision</a></li>
     <li><a href="#team">Team</a></li>
   </ul>
+  <button class="nav-burger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<div class="nav-mobile-overlay">
+  <ul class="nav-mobile-links">
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#solution">Solution</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#technology">Technology</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#patents">Patents</a></li>
+    <li><a href="#market">Market</a></li>
+    <li><a href="#business-model">Pricing</a></li>
+    <li><a href="#go-to-market">GTM</a></li>
+    <li><a href="#financials">Financials</a></li>
+    <li><a href="#why-win">Why Win</a></li>
+    <li><a href="#vision">Vision</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -1038,6 +1066,33 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Hamburger menu
+const burger = document.querySelector('.nav-burger');
+const mobileOverlay = document.querySelector('.nav-mobile-overlay');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  mobileOverlay.classList.toggle('open');
+});
+mobileOverlay.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    burger.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+  });
+});
+
+// Scroll spy — highlight active nav link
+const allNavLinks = document.querySelectorAll('.nav-links a, .nav-mobile-links a');
+const spyObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      allNavLinks.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-35% 0px -60% 0px' });
+document.querySelectorAll('section[id]').forEach(s => spyObserver.observe(s));
 
 </script>
 </body>
