@@ -84,6 +84,8 @@ section{min-height:100vh;padding:50px 0 50px}
 .problem-card h3{font-family:var(--display);font-size:1.05rem;font-weight:600;color:var(--deep);margin-bottom:0.5rem}
 .problem-card p{font-size:0.85rem;color:#666;line-height:1.6}
 .problem-callout{margin-top:3rem;background:var(--deep);color:var(--white);border-radius:12px;padding:2rem 2.5rem;display:flex;align-items:center;gap:1.5rem}
+.order-flow-figure{margin:3rem 0 0;padding:0}
+.order-flow-img{width:100%;height:auto;display:block;border-radius:12px;box-shadow:0 8px 32px rgba(45,27,105,0.12)}
 .problem-callout p{font-family:var(--display);font-size:1.2rem;font-weight:700}
 .problem-callout span{color:var(--light)}
 
