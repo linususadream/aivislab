@@ -12,8 +12,8 @@ export default function Team() {
               <span className="team-role-badge">CEO</span>
               <p>Visionary leader with deep expertise in AI, robotics, and retail automation. 10-Year President at Unitech America/AIDC Industry USA.</p>
               <div className="team-contact-row">
-                <span>scottc@aivislab.com</span>
-                <span>US: 562-760-9529</span>
+                <span>scottchungusa@gmail.com</span>
+                
               </div>
             </div>
           </div>
