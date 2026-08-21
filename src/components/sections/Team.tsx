@@ -3,20 +3,11 @@ export default function Team() {
     <section id="team">
       <div className="container">
         <p className="section-label reveal"><img src="bird-logo.png" alt="AivisLab" className="section-logo-img" /> Leadership</p>
-        <h2 className="team-title reveal">AivisLab Team</h2>
-        <div className="team-ceo-row reveal">
-          <div className="team-ceo-card">
-            <div className="team-avatar team-avatar-lg">SC</div>
-            <div className="team-ceo-info">
-              <h3>Scott Chung</h3>
-              <span className="team-role-badge">CEO</span>
-              <p>Visionary leader with deep expertise in AI, robotics, and retail automation. 10-Year President at Unitech America/AIDC Industry USA.</p>
-              <div className="team-contact-row">
-                <span>scottchungusa@gmail.com</span>
-                
-              </div>
-            </div>
-          </div>
+        <h2 className="team-title reveal">Contact info</h2>
+        <div className="contact-info-box reveal">
+          <p className="contact-info-row"><span className="contact-info-label">Contact</span> : <a href="mailto:Sales@aivislab.com">Sales@aivislab.com</a></p>
+          <p className="contact-info-row"><span className="contact-info-label">Phone</span> : 562-760-9529</p>
+          <p className="contact-info-row"><span className="contact-info-label">Address</span> : 15615 Alton Pkwy Suite 450, Irvine CA 92618 USA</p>
         </div>
       </div>
     </section>

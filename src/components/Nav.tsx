@@ -12,7 +12,7 @@ const navItems = [
   { href: '#go-to-market', label: 'GTM' },
   { href: '#why-win', label: 'Why Win' },
   { href: '#vision', label: 'Vision' },
-  { href: '#team', label: 'Team' },
+  { href: '#team', label: 'Contact' },
 ]
 
 export default function Nav() {

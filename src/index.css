@@ -199,9 +199,6 @@ section{min-height:100vh;padding:50px 0 50px}
 .market-seg:hover{border-color:var(--mid);transform:translateY(-2px)}
 .market-seg h4{font-family:var(--display);font-size:0.82rem;font-weight:700;color:var(--deep)}
 .market-seg-icon{width:40px;height:40px;background:var(--pale);border-radius:8px;display:flex;align-items:center;justify-content:center;margin:0 auto 0.75rem}
-.chains-title{font-family:var(--display);font-size:1.15rem;font-weight:600;color:var(--deep);margin-bottom:1rem}
-.chains-list{display:flex;flex-wrap:wrap;gap:0.75rem}
-.chain-tag{font-family:var(--mono);font-size:0.75rem;padding:0.4rem 0.9rem;background:var(--white);border:1px solid rgba(107,70,193,0.2);border-radius:999px;color:var(--deep)}
 
 /* BUSINESS MODEL */
 #business-model{background:var(--ink)}
@@ -280,15 +277,11 @@ section{min-height:100vh;padding:50px 0 50px}
 /* TEAM */
 #team{background:var(--white)}
 .team-title{font-family:var(--display);font-size:clamp(1.6rem,3vw,2.6rem);font-weight:600;color:var(--deep);margin-bottom:2.5rem}
-.team-ceo-row{margin-bottom:2.5rem}
-.team-ceo-card{display:flex;align-items:flex-start;gap:1.25rem;background:var(--deep);border-radius:12px;padding:1.25rem;flex-wrap:wrap}
-.team-avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--mid),var(--light));display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem;font-weight:800;color:var(--white);letter-spacing:0.05em;flex-shrink:0}
-.team-avatar-lg{width:80px;height:80px;font-size:1.4rem;border:3px solid rgba(255,255,255,0.2)}
-.team-ceo-info h3{font-family:var(--display);font-size:1.5rem;font-weight:800;color:var(--white);margin-bottom:0.5rem}
-.team-role-badge{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;background:rgba(159,122,234,0.3);color:var(--light);padding:0.3rem 0.75rem;border-radius:4px;display:inline-block;margin-bottom:1rem}
-.team-ceo-info p{font-size:0.9rem;color:rgba(255,255,255,0.65);line-height:1.7;max-width:520px;margin-bottom:1rem}
-.team-contact-row{display:flex;gap:1.5rem;flex-wrap:wrap}
-.team-contact-row span{font-family:var(--mono);font-size:0.75rem;color:rgba(255,255,255,0.4);letter-spacing:0.05em}
+.contact-info-box{background:var(--white);border:1px solid rgba(107,70,193,0.15);border-radius:10px;padding:1.5rem 2rem;display:inline-block}
+.contact-info-row{display:flex;gap:0.4rem;font-weight:700;color:var(--mid);font-size:1.05rem;margin:0.35rem 0}
+.contact-info-label{min-width:82px}
+.contact-info-row a{color:var(--mid);text-decoration:none}
+.contact-info-row a:hover{text-decoration:underline}
 .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1.25rem}
 .team-card{background:#F7F5FF;border:1px solid rgba(107,70,193,0.15);border-radius:8px;padding:0.875rem 0.75rem;display:flex;flex-direction:column;gap:0.3rem;transition:all 0.3s}
 .team-card:hover{border-color:var(--mid);box-shadow:0 8px 24px rgba(45,27,105,0.1);transform:translateY(-3px)}
@@ -381,15 +374,6 @@ section{min-height:100vh;padding:50px 0 50px}
 /* ASIA MARKET */
 .asia-market{margin-top:3.5rem;padding-top:3rem;border-top:1px solid rgba(107,70,193,0.12)}
 .asia-market-title{font-family:var(--display);font-size:1.15rem;font-weight:600;color:var(--deep);margin-bottom:1rem}
-.asia-tabs{display:flex;gap:0.5rem;margin-bottom:1.5rem;flex-wrap:wrap}
-.asia-tab{font-family:var(--mono);font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.4rem 1rem;border-radius:4px;border:1px solid rgba(107,70,193,0.2);color:rgba(107,70,193,0.6);cursor:pointer;transition:all 0.2s;user-select:none}
-.asia-tab:hover{border-color:var(--mid);color:var(--mid)}
-.asia-tab.active{background:var(--deep);color:var(--white);border-color:var(--deep)}
-.asia-brands-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:0.6rem;margin-bottom:1.5rem}
-.asia-brand-card{background:var(--white);border:1px solid rgba(107,70,193,0.12);border-radius:5px;padding:0.325rem 0.5rem;transition:all 0.2s}
-.asia-brand-card:hover{border-color:var(--mid);transform:translateY(-2px);box-shadow:0 4px 12px rgba(45,27,105,0.08)}
-.asia-brand-name{font-size:0.82rem;font-weight:500;color:var(--deep);display:block;margin-bottom:0.2rem}
-.asia-brand-country{font-family:var(--mono);font-size:0.58rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--mid)}
 .asia-stat-box{background:var(--deep);border-radius:10px;padding:1.25rem 1.75rem}
 .asia-stat-box p{font-size:0.85rem;color:rgba(255,255,255,0.65);line-height:1.75}
 .asia-stat-box strong{color:var(--gold)}
@@ -444,7 +428,6 @@ footer span{color:var(--light)}
   .bm-ent-header{flex-direction:column;align-items:flex-start}
   .arr-table{font-size:0.72rem}
   .arr-table th,.arr-table td{padding:0.625rem 0.75rem}
-  .asia-brands-grid{grid-template-columns:repeat(auto-fill,minmax(100px,1fr))}
   .patents-certs{grid-template-columns:repeat(2,1fr)}
   .patents-pct{flex-direction:column;gap:1rem}
   .vision-eco-nodes{grid-template-columns:repeat(2,1fr)}
